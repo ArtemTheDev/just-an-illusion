@@ -138,8 +138,8 @@ let character_descriptions = [
     'Tails the fox - a kind fox and Sonic’s best friend. Was one of the 3 Exzark’s victims.',
     'Knuckles the echidna - an echidna who guards his clan’s sacred artifact - The Master Emerald. He became one of the victims too.',
     'Doctor Ivo “Eggman” Robotnik - the Mobius’ number one threat and a mad scientist. He uses his armies to conquer the planet and crush anyone who opposes him, however, he became one of Exzark’s victims as well.',
-    'metal sonic',
-    'exzark'
+    "Metal Sonic The Robot - one of the greatest Robotnik's creations. Unwittingly became a slave of Exzark and an enemy of heroes.",
+    "Exzark - the main villan of the game. One of the Pervision's experiments, who decided to destroy a Mobius for it's own purposes."
 ];
 
 let character_color = [
@@ -242,7 +242,7 @@ function changeLang(lang_id) {
         $("#downloads_window").text("Скачать");
         $("#downloads_old_window").text("Старые версии");
         $("#footer_madeBY").text("Автор сайта: Artem The Developer (ATD)");
-        $("#footer_ver").text("Текущая версия сайта: V.0.3");
+        $("#footer_ver").text("Текущая версия сайта: V.0.4");
         $("#downloads_btn").text("Скачать старые версии");
         $("#lang").hide().text("RUS").fadeIn(animateTime);
         $("#game_description").text('Sonic.exe Just An Illusion - это игра в стиле классических "Сониковских" платформеров с элементами хоррора. Игра предоставляет 3 основных играбельных персонажей и историю с несколькими отвлетвлениями.');
@@ -284,7 +284,7 @@ function changeLang(lang_id) {
         $("#downloads_window").text("Downloads");
         $("#downloads_old_window").text("Old versions");
         $("#footer_madeBY").text("Site is made by Artem The Developer (ATD)");
-        $("#footer_ver").text("Current version: V.0.3");
+        $("#footer_ver").text("Current version: V.0.4");
         $("#downloads_btn").text("Download old versions");
         $("#lang").hide().text("ENG").fadeIn(animateTime);
         $("#game_description").text('Sonic.exe Just An Illusion is a game styled after classic Sonic games mixed in with some horror elements. The game allows you to control 3 playable characters and has a narrative with multiple branches.');

@@ -3,4 +3,6 @@
     --background_dark: rgb(14, 0, 0);
     --text_color: rgb(128, 28, 28);
     --line_color: red;
+    --btn_border_color: rgb(90, 0, 0);
+    --btn_color: rgb(136, 0, 0);
 }

@@ -1,9 +1,14 @@
+<!DOCTYPE html>
 <html>
     <head>
         <title>Sonic.exe Just An Illusion</title>
         <link rel="stylesheet" type="text/css" href="css/colors.css">
         <link rel="stylesheet" type="text/css" href="css/style.css">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
+        <link rel="manifest" href="img/favicons/site.webmanifest">
     </head>
 
     <body>
@@ -12,6 +17,9 @@
                 <div class="image-logo">
                     <img src="img/logo.png">
                 </div>
+                <div id="lang_change_btn" class="language__select">
+                    <div id="lang" class="language">ENG</div>
+                </div>
                 <div id="menu_opener" class="menu__opener">
                     <span></span>
                     <div id="menu" class="menu">
@@ -19,8 +27,8 @@
                         <div id="screens_btn" class="menu__options">Screenshots</div>
                         <div id="characters_btn" class="menu__options">Characters</div>
                         <div id="gameplay_btn" class="menu__options">Gameplay</div>
-                        <div class="menu__options">Links</div>
-                        <div class="menu__options">Downloads</div>
+                        <div id="links_btn" class="menu__options">Links</div>
+                        <div id="download_btn" class="menu__options">Downloads</div>
                     </div>
                 </div>
             </div>
@@ -32,7 +40,7 @@
                 <div class="bigImage img3"></div>
                 <div class="slider__content">
                     <div class="slider__content-title">Sonic.exe Just An Illusion</div>
-                    <div class="slider__content-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et elementum lacus. In rhoncus lacus sed nibh suscipit condimentum. Ut ac quam vel felis tincidunt tristique. Phasellus et lobortis nulla. Pellentesque hendrerit enim sed augue venenatis cursus. Vestibulum tincidunt mi id tellus accumsan, elementum condimentum sem pulvinar.</div>
+                    <div id="game_description" class="slider__content-content">Sonic.exe Just An Illusion is a game styled after classic Sonic games mixed in with some horror elements. The game allows you to control 3 playable characters and has a narrative with multiple branches.</div>
                 </div>
             </div>
             <div id="screenshots" class="divider__Text">Screenshots</div>
@@ -71,9 +79,13 @@
             <div class="divider__line"></div>
             <div id="characters" class="divider__Text">Characters</div>
             <div class="character__select">
-                <svg id="arrow_left" class="character__select-arrows character__select-arrow_left" width="80" height="80" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M6.032 13.586a.75.75 0 0 1-.118-1.055L9.54 8 5.914 3.468a.75.75 0 1 1 1.172-.937l4 5a.75.75 0 0 1 0 .937l-4 5a.75.75 0 0 1-1.054.118z" fill="#fff"></path></svg>
+                <div id="arrow_left">
+                    <svg id="arrow_left_svg" class="character__select-arrows character__select-arrow_left" width="80" height="80" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M6.032 13.586a.75.75 0 0 1-.118-1.055L9.54 8 5.914 3.468a.75.75 0 1 1 1.172-.937l4 5a.75.75 0 0 1 0 .937l-4 5a.75.75 0 0 1-1.054.118z" fill="#fff"></path></svg>
+                </div>
                 <div id="character_name" class="character__info-name">Sonic the hedgehog</div>
-                <svg id="arrow_right" class="character__select-arrows" width="80" height="80" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M6.032 13.586a.75.75 0 0 1-.118-1.055L9.54 8 5.914 3.468a.75.75 0 1 1 1.172-.937l4 5a.75.75 0 0 1 0 .937l-4 5a.75.75 0 0 1-1.054.118z" fill="#fff"></path></svg>
+                <div id="arrow_right">
+                    <svg id="arrow_right_svg" class="character__select-arrows" width="80" height="80" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M6.032 13.586a.75.75 0 0 1-.118-1.055L9.54 8 5.914 3.468a.75.75 0 1 1 1.172-.937l4 5a.75.75 0 0 1 0 .937l-4 5a.75.75 0 0 1-1.054.118z" fill="#fff"></path></svg>
+                </div>
             </div>
             <div class="character__info">
                 <div id="character_description" class="character__info-description"></div>
@@ -83,27 +95,93 @@
             </div>
             <div class="divider__line"></div>
             <div id="gameplay" class="divider__Text">Gameplay</div>
+            <div class="gameplay">
+                <div class="gameplay__block">
+                    <iframe class="gameplay__block-video" width="560" height="315"
+                        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        src="https://www.youtube.com/embed/1txdR-ablrc"  allowfullscreen>
+                    </iframe>
+                </div>
+
+                <div class="gameplay__block">
+                    <iframe class="gameplay__block-video" width="560" height="315" 
+                        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        src="https://www.youtube.com/embed/AdP13iv5dBY" allowfullscreen>
+                    </iframe>
+                </div>
+
+                <div class="gameplay__block">
+                    <iframe class="gameplay__block-video" width="560" height="315" 
+                        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        src="https://www.youtube.com/embed/vuwkWCy9gCs" allowfullscreen>
+                    </iframe>
+                </div>
+
+                <div class="gameplay__block">
+                    <iframe class="gameplay__block-video" width="560" height="315" 
+                        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        src="https://www.youtube.com/embed/fmlINipODh8" allowfullscreen>
+                    </iframe>
+                </div>
+
+                <div class="gameplay__block">
+                    <iframe class="gameplay__block-video" width="560" height="315" 
+                        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        src="https://www.youtube.com/embed/r09I3uq0QXE" allowfullscreen>
+                    </iframe>
+                </div>
+
+                <div class="gameplay__block">
+                    <iframe class="gameplay__block-video" width="560" height="315" 
+                        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        src="https://www.youtube.com/embed/A-Rni5L1Uec" allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
             <div class="divider__line"></div>
-            <div id="gameplay" class="divider__Text">Links</div>
+            <div id="links" class="divider__Text">Links</div>
             <div class="links__block">
                 <div class="links__object-block">
                     <a href="https://www.youtube.com/channel/UCLzyUmZKWG2M1oujdKERmyg">
                         <img class="block-img" src="img/atd_icon.png">
-                        <div class="block-description">Artem The Developer YouTube channel</div>
+                        <div id="channel_link" class="block-description">Artem The Developer YouTube channel</div>
                     </a>
                 </div>
                 <div class="links__object-block">
                     <a href="https://gamejolt.com/games/IAMGOD/394189">
                         <img class="block-img" src="img/gamejolt_icon.png">
-                        <div class="block-description">GameJolt page</div>
+                        <div id="gj_link" class="block-description">GameJolt page</div>
                     </a>
                 </div>
             </div>
             <div class="divider__line"></div>
-            <div id="gameplay" class="divider__Text">Downloads</div>
+            <div id="download" class="divider__Text">Downloads</div>
+            <div class="downloads__block">
+                <div id="downloads_description" class="downloads__block-text">Sonic.exe Just An Illusion hasn’t been released yet, but you can download the demo version of the game.</div>
+                    <div id="downloads_btn" class="download__blocks-button">Download old versions</div>
+            </div>
         </div>
+        <footer>
+            <div id="footer_madeBY" class="footer-text">Site is made by Artem The Developer (ATD)</div>
+            <div id="footer_ver" class="footer-text">Current version: V.0.3</div>
+        </footer>
+
         <div id="bigger_img_wrapper" class="wrapper">
             <img id="bigger_img" src="img/gameplay_screenshots/1.png">
+        </div>
+
+        <div id="downloads_wrapper" class="wrapper">
+            <div class="downloads__window">
+                <div id="downloads_window" class="divider__Text">Downloads</div>
+                <div id="downloads_old_window" class="divider__Text">Old versions</div>
+                <a href="https://drive.google.com/u/1/uc?id=1I8OFnAVqxFoYnBtCgJVkaPL7MJaUbk7C&export=download">
+                    <div class="download__blocks-button">Download V. 0.2.1 (Tails' Green Hill Zone Demo)</div>
+                </a>
+                <a href="https://drive.google.com/u/1/uc?id=1jQHM4T2YToT2SiiPXkd_37ayYkrYD0vP&export=download">
+                    <div class="download__blocks-button">Download V. 0.1.2 (Tails' & Knuckles' Demo)</div>
+                </a>
+                <!--<div class="download__blocks-button">Download V. 0.1.0 (Tails' Demo)</div>-->
+            </div>
         </div>
     </body>
 
